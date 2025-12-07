@@ -1,0 +1,26 @@
+﻿__pycache__/
+*.pyc
+*.log
+data/raw/*
+data/processed/*
+models/*
+vectorstore/*
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+.env.example
+*.env
+
+# Credentials / API keys
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+
+# OS / IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
