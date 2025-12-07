@@ -1,0 +1,5 @@
+﻿torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+transformers datasets accelerate peft bitsandbytes sentence-transformers
+langchain langchain-community langchain-ollama
+faiss-gpu
+yfinance discord.py pandas jupyterlab

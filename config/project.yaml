@@ -1,0 +1,27 @@
+﻿project:
+  name: "My AI Project"
+  description: "Universal starting point for any AI/ML project on DGX Spark"
+  tags: [ai, ml, gpu, workbench]
+
+data:
+  raw_path: "data/raw/"
+  processed_path: "data/processed/"
+
+model:
+  base: "google/gemma-2-2b-it"
+  lora:
+    enabled: false
+    r: 16
+    alpha: 32
+
+rag:
+  enabled: false
+  embedder: "sentence-transformers/all-MiniLM-L6-v2"
+  vectorstore: "faiss"
+
+ui:
+  type: "none"
+
+alerts:
+  enabled: false
+  frequency_minutes: 5

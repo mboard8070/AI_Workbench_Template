@@ -1,0 +1,12 @@
+﻿name: "{{ cookiecutter.project_name|default('Universal AI Project') }}"
+description: "Reusable NVIDIA AI Workbench template"
+baseImage: nvcr.io/nvidia/pytorch:24.10-py3
+containerEnv:
+  WANDB_DISABLED: "true"
+  PYTHONUNBUFFERED: "1"
+mounts:
+  - hostPath: ${PROJECT_DIR}
+    containerPath: /workspace
+    readOnly: false
+startup:
+  - command: "sleep infinity"
